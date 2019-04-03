@@ -147,7 +147,6 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
   }
 
   void toggleTheme() {
-    print(isDark);
     setState(() {
       _currentTheme = (isDark) ? darkTheme : lightTheme;
       isDark = !isDark;
