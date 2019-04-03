@@ -44,9 +44,9 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
     dieFaceAssetString = 'assets/die_face_$randomFace.svg';
     animationController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 300),
+      duration: Duration(milliseconds: 400),
       lowerBound: 0,
-      upperBound: 10,
+      upperBound: 1,
     )..addListener(() {
         this.setState(() {});
       });
